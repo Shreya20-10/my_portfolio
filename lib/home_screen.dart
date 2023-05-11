@@ -10,68 +10,84 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Padding(
-        padding: EdgeInsets.fromLTRB(0.0, 300.0, 0.0, 0.0),
+        padding: EdgeInsets.fromLTRB(0.0, 350.0, 0.0, 70.0),
         child: Column(
+          //mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Padding(
-              padding: EdgeInsets.fromLTRB(150.0, 0.0, 57.0, 0.0),
-              child: Row(
-                //mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Text(
-                    "SHREYA",
-                    style: GoogleFonts.heebo(
-                        color: Colors.white,
-                        fontStyle: FontStyle.normal,
-                        fontSize: 180,
-                        fontWeight: FontWeight.w100),
-                    //overflow: TextOverflow.clip,
-                  ),
-                  SizedBox(
-                    width: 850.0,
-                    child: Divider(
-                      color: Colors.white,
-                      indent: 30.0,
+            Expanded(
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(170.0, 0.0, 57.0, 0.0),
+                child: Row(
+                  //mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Text(
+                      "SHREYA",
+                      style: GoogleFonts.heebo(
+                          color: Colors.white,
+                          fontStyle: FontStyle.normal,
+                          fontSize: 150,
+                          fontWeight: FontWeight.w100),
+                      //overflow: TextOverflow.clip,
                     ),
-                  ),
-                ],
+                    Center(
+                      child: SizedBox(
+                        child: SizedBox(
+                          width: 1000.0,
+                          child: Divider(
+                            color: Colors.white,
+                            indent: 30.0,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(39.0, 10.0, 560.0, 10.0),
-              child: Row(
-                children: [
-                  SizedBox(
-                    width: 245.0,
-                    child: Divider(
-                      color: Colors.white,
-                      thickness: 0.0,
-                      endIndent: 20.0,
-                    ),
-                  ),
-                  Text(
-                    "MURARKA",
-                    style: GoogleFonts.heebo(
-                        color: Colors.white,
-                        fontStyle: FontStyle.normal,
-                        fontSize: 180,
-                        fontWeight: FontWeight.w100),
+
+              Expanded(
+                child: Padding(
+                padding: EdgeInsets.fromLTRB(39.0, 0.0, 560.0, 10.0),
+                child: Row(
+                  children: [
+                    SizedBox(
+                        width: 260.0,
+                        child: Divider(
+                          color: Colors.white,
+                          thickness: 0.0,
+                          endIndent: 20.0,
+                        ),
+                      ),
+                    
+                    Text(
+                        "MURARKA",
+                        style: GoogleFonts.heebo(
+                            color: Colors.white,
+                            fontStyle: FontStyle.normal,
+                            fontSize: 150,
+                            fontWeight: FontWeight.w100),
 // overflow: TextOverflow.clip,
+                      ),
+                    
+                  ],
+                ),
+            ),
+              ),
+            Expanded(
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(0.0, 10.0, 900.0, 0.0),
+                child: Text(
+                  "{flutter_developer}",
+                  style: GoogleFonts.lato(
+                    color: Colors.red,
+                    fontStyle: FontStyle.normal,
+                    fontSize: 45,
+                    fontWeight: FontWeight.w400,
                   ),
-                ],
+                ),
               ),
             ),
-            
-            Padding(
-              padding: EdgeInsets.fromLTRB(234.0, 0.0, 781.0, 0.0),
-              child: Text(
-                "{flutter_developer}",
-                style: GoogleFonts.lato(color: Colors.red, fontStyle: FontStyle.normal, fontSize: 45, fontWeight: FontWeight.w400,),
-              ),
-            ),
-            
-            
           ],
         ),
       ),
